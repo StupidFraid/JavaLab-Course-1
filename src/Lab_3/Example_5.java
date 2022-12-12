@@ -32,26 +32,59 @@ public class Example_5 {
         }
     }
     public static void forOption(){
+        int tempValue;
+        tempValue = 0;
+        System.out.println("Введите интересующее вас количество чисел: ");
         Scanner in = new Scanner(System.in);
         int numberValues = in.nextInt();
         int[] array = new int[numberValues];
-        for (int i = array[0]; i <= array.length; i++) {
-            if ((i % 5 == 2) & (i % 3 == 1)){
+
+        for (int i = 0; i < array.length; i++) {
+            for (int l = (tempValue + 1); ; l++ )
+                if ((l % 5 == 2) & (l % 3 == 1)){
+                    array[i] = l;
+                    tempValue = l;
+                    break;
             }
         }
-        System.out.println();
+        printArray(array);
     }
 
     public static void whileOption(){
-        int[] array = initArray();
-        Arrays.sort(array);
-        int i = array[0];
-
-        while (i <= array[1]){
-            System.out.print(i + " ");
-            i++;
+        Scanner in = new Scanner(System.in);
+        int index = 0;
+        int tempValue = 0;
+        System.out.println("Введите интересующее вас количество чисел: ");
+        int numberValues = in.nextInt();
+        int[] array =  new int[numberValues];
+        while (index < array.length){
+            tempValue++;
+            while (true){
+              if ((tempValue % 5 == 2) & (tempValue % 3 == 1)) {
+                  array[index] = tempValue;
+                  break;
+              }
+              tempValue++;
+            }
+            index++;
         }
-        System.out.println();
+        printArray(array);
+    }
+
+    public static void printArray(int[] args){
+        String resultLine = "";
+        int tempValue = 0;
+        for (int i = 0 ; i < args.length ; i++ ){
+            if (i == 0){
+                resultLine = String.valueOf(args[i]);
+
+            }
+            else resultLine = resultLine + "+" + args[i];
+            tempValue = tempValue + args[i];
+        }
+
+            resultLine = resultLine + "=" + tempValue;
+        System.out.println(resultLine);
     }
 
 }
