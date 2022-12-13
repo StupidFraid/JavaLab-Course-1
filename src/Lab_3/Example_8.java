@@ -1,6 +1,7 @@
 package Lab_3;
 
 import java.util.Arrays;
+
 /// In progress.
 /// Получилось очень сложно, вероятно как то можно упростить метод deleteVocalic.
 /// Но я отталкивался от того что массив может быть не жестко задан 10, а допустим
@@ -10,11 +11,17 @@ public class Example_8 {
         String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         String[] resultArray = new String[10];
 
-        deleteVocalic(resultArray, alphabet);
+        String[] mainArray = deleteVocalic(resultArray, alphabet);
+        String[] reverseArray = goAppend(mainArray);
+
+        System.out.println("Массив:");
+        System.out.println(Arrays.toString(mainArray));
+        System.out.println("Обратный массив:");
+        System.out.println(Arrays.toString(reverseArray));
 
     }
 
-    static void deleteVocalic(String[] array, String alphabet){
+    static String[] deleteVocalic(String[] array, String alphabet){
         String[] vocalicArray = new String[]{"A","E","I","O","U","Y"};
         int i = 0, s = 0, vocalicCounter;
         while ( i < array.length){//проходимся по массиву который заполняем
@@ -34,9 +41,20 @@ public class Example_8 {
             }
             i++;
         }
-        System.out.println(Arrays.toString(array));
+        return array;
+    }
+
+    static String[] goAppend(String[] array){
+        int lengthArray = (array.length - 1);
+        String[] appendArray = new String[(lengthArray + 1)];
+        for (int i = lengthArray; i >= 0; i--){
+            appendArray[(lengthArray - i)] = array[i];
+        }
+        return appendArray;
     }
 }
+
+
 
 
 //        Напишите программу, в которой создается символьный массив из
@@ -48,5 +66,5 @@ public class Example_8 {
 
 
 //        Количество букв 26
-//        Из них согласных - 21 штука(B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Y, Z)
+//        Из них согласных - 20 штука(B, C, D, F, G, H, J, K, L, M, N, P, Q, R, S, T, V, W, X, Z)
 //        Гласных - 6 штук (A, E, I, O, U, Y)
