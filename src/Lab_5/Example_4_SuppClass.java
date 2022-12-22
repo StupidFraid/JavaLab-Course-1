@@ -1,5 +1,6 @@
 package Lab_5;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Example_4_SuppClass {
@@ -8,18 +9,24 @@ public class Example_4_SuppClass {
     double doubleArg;
 
 
-    public Example_4_SuppClass() {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите значение int переменной: ");
-        this.integerArg = in.nextInt();
-        System.out.println("Введите значение char переменной: ");
-        this.charArg = in.next().charAt(0);
+    public Example_4_SuppClass(int integerArg, char charArg) {
+        this.integerArg = integerArg;
+        this.charArg = charArg;
     }
 
     public Example_4_SuppClass(double doubleArg) {
-        Scanner in = new Scanner(System.in);
-        System.out.println("Введите значение double переменной: ");
-        this.doubleArg = in.nextDouble();
+        this.doubleArg = doubleArg;
+
+        String[] tempValue = String.valueOf(doubleArg).split("[.]");
+        charArg = (char) Integer.parseInt(tempValue[0]);
+        integerArg = Integer.parseInt(tempValue[1].substring(0,2));
     }
 
+    public int getIntegerArg() {
+        return integerArg;
+    }
+
+    public char getCharArg() {
+        return charArg;
+    }
 }
