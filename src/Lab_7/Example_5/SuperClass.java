@@ -7,7 +7,7 @@ public class SuperClass {
         this.protectedString = protectedString;
     }
 
-    public String infoString(){
+    public String infoValues(){
         String FirstClassNameAndFieldValue;
         FirstClassNameAndFieldValue = "super: "  + "\n" +
                 " Class name: " + this.getClass().getSimpleName() + "\n" +

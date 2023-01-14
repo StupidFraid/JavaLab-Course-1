@@ -4,19 +4,19 @@ package Lab_7.Example_5;
 public class Example_5 {
     public static void main(String[] args) {
         SuperClass superClassObject = new SuperClass("Какой-то текстовый параметр");
-        System.out.println(superClassObject.infoString());
+        System.out.println(superClassObject.infoValues());
 
         FirstSubClass firstSubObject = new FirstSubClass("Какой-то текстовый параметр первого саб класса",
                 10);
-        System.out.println(firstSubObject.infoString());
+        System.out.println(firstSubObject.infoValues());
 
         SecondSubClass secondSubObject = new SecondSubClass("Какой-то текстовый параметр второго " +
                 "саб класса",'A');
-        System.out.println(secondSubObject.infoString());
+        System.out.println(secondSubObject.infoValues());
 
-        String testSuper = superClassObject.infoString();
-        String testFirstSub = firstSubObject.infoString();
-        String testSecondSub = secondSubObject.infoString();
+        String testSuper = superClassObject.infoValues();
+        String testFirstSub = firstSubObject.infoValues();
+        String testSecondSub = secondSubObject.infoValues();
         System.out.println(testSuper);
         System.out.println(testFirstSub);
         System.out.println(testSecondSub);

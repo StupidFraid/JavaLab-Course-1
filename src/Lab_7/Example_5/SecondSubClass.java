@@ -8,7 +8,7 @@ public class SecondSubClass extends SuperClass{
         this.protectedChar = protectedChar;
     }
 
-    public String infoString(){
+    public String infoValues(){
         String SecondSubClassNameAndFieldValue;
         SecondSubClassNameAndFieldValue = "Second Sub class: "  + "\n" +
                 " Class name: " + this.getClass().getSimpleName() + "\n" +

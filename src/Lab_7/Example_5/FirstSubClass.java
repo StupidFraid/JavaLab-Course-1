@@ -8,7 +8,7 @@ public class FirstSubClass extends SuperClass{
         this.protectedInt = protectedInt;
     }
 
-    public String infoString(){
+    public String infoValues(){
         String FirstSubClassNameAndFieldValue;
         FirstSubClassNameAndFieldValue = "First Sub class: "  + "\n" +
                 " Class name: " + this.getClass().getSimpleName() + "\n" +
