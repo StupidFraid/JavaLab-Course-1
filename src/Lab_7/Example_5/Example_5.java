@@ -14,12 +14,14 @@ public class Example_5 {
                 "саб класса",'A');
         System.out.println(secondSubObject.infoValues());
 
-        String testSuper = superClassObject.infoValues();
-        String testFirstSub = firstSubObject.infoValues();
-        String testSecondSub = secondSubObject.infoValues();
-        System.out.println(testSuper);
-        System.out.println(testFirstSub);
-        System.out.println(testSecondSub);
+//        String testSuper = superClassObject.infoValues();
+//        String testFirstSub = firstSubObject.infoValues();
+//        String testSecondSub = secondSubObject.infoValues();
+//        System.out.println(testSuper);
+//        System.out.println(testFirstSub);
+//        System.out.println(testSecondSub);
+        SuperClass lastObject = new FirstSubClass("Зачем это?", 777);
+        System.out.println(lastObject.infoValues());
     }
 }
 //        Напишите программу, в которой есть суперкласс с защищенным текстовым полем,
