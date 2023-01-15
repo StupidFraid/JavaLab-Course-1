@@ -9,3 +9,5 @@
 6) [Лабораторная работа №6](https://github.com/StupidFraid/javaBasicLab/tree/master/src/Lab_6)
 7) [Лабораторная работа №7](https://github.com/StupidFraid/javaBasicLab/tree/master/src/Lab_7)
 ### Timus: [Задачи на Timus](https://github.com/StupidFraid/javaBasicLab/tree/master/src/timus)
+Проверить список всех решенных задач можно [здесь](https://acm.timus.ru/author.aspx?id=350825)
+![Линчый  результат из ЛК Timus](img/img.png)

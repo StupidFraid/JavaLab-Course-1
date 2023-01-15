@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        // Все не так явно, сломал голову пока думал как обработать все эти строки
+        // ПОКА НЕ НАШЕЛ РЕШЕНИЕ
 
         String inputFileName = "src/timus/task_1005/input.txt";
         boolean oj = System.getProperty("ONLINE_JUDGE") != null;
