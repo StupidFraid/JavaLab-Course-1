@@ -22,7 +22,7 @@ public class Primer2 {
     public static void main(String[] args) {
     try {
         // С потоком связан файл
-        InputStream inFile = new FileInputStream("/Users/alexey4he/Documents/learning/Programing/Java/tempText.txt");
+        InputStream inFile = new FileInputStream("test_Folder/templateText.txt");
         readAllByByte(inFile);
         System.out.print("\n\n\n");
         inFile.close();
@@ -34,7 +34,7 @@ public class Primer2 {
         inUrl.close();
 
         // С потоком связан массив типа byte
-        InputStream inArray = new ByteArrayInputStream(new byte[] {7, 9, 3, 7, 4});
+        InputStream inArray = new ByteArrayInputStream(new byte[] {84, 104, 105, 115, 32});
         readAllByByte(inArray);
         System.out.print("\n\n\n");
         inArray.close();
@@ -44,3 +44,6 @@ public class Primer2 {
     }
 
 }
+
+// Прочитать и вывести на экран информацию из трех источников:
+// файла на диске, интернет-страницы и массива типа byte

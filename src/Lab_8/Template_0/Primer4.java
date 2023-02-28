@@ -5,9 +5,13 @@ import java.util.Scanner;
 
 public class Primer4 {
     public static void main(String[] args) {
-        // Создание исходного файла numIsh.txt и запись в него чисел типа float
         try {
-            File f1 = new File("./Lab_8_Dir_My/numIsh.txt");
+            // Создание новой папки My на диске
+            String mainFolder = "test_Folder/My";
+            File folder1 = new File(mainFolder);
+            folder1.mkdir();
+            // Создание исходного файла numIsh.txt и запись в него чисел типа float
+            File f1 = new File(mainFolder + "/numIsh.txt");
             f1.createNewFile();
 
             Scanner sc = new Scanner(System.in, "cp1251");
@@ -23,7 +27,7 @@ public class Primer4 {
             wr.close();
 
             // Создание файла numRez.txt и переписывание в него чисел из numIsh.txt
-            File f2 = new File("./Lab_8_Dir_My/numRez.txt");
+            File f2 = new File(mainFolder + "/numRez.txt");
             f2.createNewFile();
 
             // Поток для чтения из исходного файла numIsh.txt

@@ -24,7 +24,7 @@ public class Primer3 {
     }
 
     public static void main(String[] args) throws IOException {
-        String fileName = "/Users/alexey4he/Documents/learning/Programing/Java/tempText.txt";
+        String fileName = "test_Folder/templateText.txt";
         InputStream inFile = null; // переменная объеявляется до секции try, чтобы не ограничивать область видимости
 
         try {
@@ -44,3 +44,5 @@ public class Primer3 {
 
     }
 }
+// Прочитать и вывести на экран информацию из предварительно
+// созданного файла с использованием буфера в 5 байт

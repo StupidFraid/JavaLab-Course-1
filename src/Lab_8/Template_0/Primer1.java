@@ -13,15 +13,17 @@ public class Primer1 {
                 System.out.println("Полный путь 1: " + f1.getAbsolutePath());
             }
 
+            // Создание нескольки вложенны папок
+            File f3 = new File("test_Folder/Path1/Path2");
+            f3.mkdirs();
+            System.out.println("Полный путь 3: " + f3.getAbsolutePath());
+
             // Создание файла в домашней директории пользователя, и вывод полного пути
-            File f2 = new File("/Lab_8_Dir_My/MyFile2.txt");
+            File f2 = new File("test_Folder/testFile1.txt");
             f2.createNewFile();
             System.out.println("Полный путь 2: " + f2.getAbsolutePath());
 
-            // Создание нескольки вложенны папок
-            File f3 = new File("/Lab_8_Dir_My/Java_Test/testMkdirs");
-            f3.mkdirs();
-            System.out.println("Полный путь 3: " + f3.getAbsolutePath());
+
         } catch (Exception e){
             System.out.println("Ошибка!!!! " + e);
         }
