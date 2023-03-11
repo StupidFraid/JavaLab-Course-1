@@ -22,7 +22,7 @@ public class Primer2 {
     public static void main(String[] args) {
     try {
         // С потоком связан файл
-        InputStream inFile = new FileInputStream("test_Folder/templateText.txt");
+        InputStream inFile = new FileInputStream("Programming_Git/test_Folder/templateText.txt");
         readAllByByte(inFile);
         System.out.print("\n\n\n");
         inFile.close();

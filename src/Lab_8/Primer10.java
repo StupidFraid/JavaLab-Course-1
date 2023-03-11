@@ -11,9 +11,9 @@ public class Primer10 {
             //создание потока
             br = new BufferedReader(
                     new InputStreamReader(
-                            new FileInputStream("./Lab_8_Dir_My/MyFile1.txt"),"cp1251"));
+                            new FileInputStream("Programming_Git/test_Folder/MyFile1.txt"),"cp1251"));
 
-            out = new PrintWriter("./Lab_8_Dir_My/MyFile2.txt", "cp1251");
+            out = new PrintWriter("Programming_Git/test_Folder/MyFile2.txt", "cp1251");
             // Переписываем информация из одного файла в другой
             int lineCout = 0;
             String s;

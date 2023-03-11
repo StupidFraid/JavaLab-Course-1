@@ -11,10 +11,10 @@ public class Primer9 {
             // создание потока для чтения и записи с нужной кодировкой
             br = new BufferedReader(
                     new InputStreamReader(
-                            new FileInputStream("./Lab_8_Dir_My/MyFile1.txt"),"cp1251"));
+                            new FileInputStream("Programming_Git/test_Folder/MyFile1.txt"),"cp1251"));
             bw = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream("./Lab_8_Dir_My/MyFile2.txt"),"cp1251"));
+                            new FileOutputStream("Programming_Git/test_Folder/MyFile2.txt"),"cp1251"));
             // Переписывание информации из одного файла в другой
             int lineCount = 0;
             String s;

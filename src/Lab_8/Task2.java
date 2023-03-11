@@ -11,10 +11,10 @@ public class Task2 {
             // Создаем поток для чтения и записи с нужной кодировкой
             br = new BufferedReader(
                     new InputStreamReader(
-                            new FileInputStream("test_Folder/Task2/outDocument.txt"), "utf8"));
+                            new FileInputStream("Programming_Git/test_Folder//Task2/outDocument.txt"), "utf8"));
             bw = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream("test_Folder/Task2/inDocument.txt"), "utf8"));
+                            new FileOutputStream("Programming_Git/test_Folder/Task2/inDocument.txt"), "utf8"));
             int lineCount = 0;
             String s;
             while ((s = br.readLine()) != null){

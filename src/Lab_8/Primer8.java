@@ -19,7 +19,7 @@ public class Primer8 {
     public static void main(String[] args) {
         try {
             // С потоком связан файл
-            InputStream inFile = new FileInputStream("test_Folder/MyFile1.txt"); // Байтовый поток
+            InputStream inFile = new FileInputStream("Programming_Git/test_Folder/MyFile1.txt"); // Байтовый поток
             Reader rFile = new InputStreamReader(inFile, "cp1251"); // передается русская кодировка
 
             readAllByByte(rFile);

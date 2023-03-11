@@ -11,10 +11,10 @@ public class Task3 {
         try {
             br = new BufferedReader(
                      new InputStreamReader(
-                             new FileInputStream("test_Folder/Task3/template.txt"), "utf8"));
+                             new FileInputStream("Programming_Git/test_Folder/Task3/template.txt"), "utf8"));
             bw = new BufferedWriter(
                     new OutputStreamWriter(
-                            new FileOutputStream("test_Folder/Task3/targetFile.txt"), "utf8"));
+                            new FileOutputStream("Programming_Git/test_Folder/Task3/targetFile.txt"), "utf8"));
 
             int lineCount = 0;
             String s;

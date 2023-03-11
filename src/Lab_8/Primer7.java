@@ -8,8 +8,8 @@ public class Primer7 {
         BufferedWriter out = null;
         try {
             // Создание файловых символьных потоков для чтения и записи
-            br = new BufferedReader( new FileReader("test_Folder/MyFile1.txt"), 1024); // 1024 - размер буфера в байтах
-            out = new BufferedWriter( new FileWriter("test_Folder/MyFile2.txt"));
+            br = new BufferedReader( new FileReader("Programming_Git/test_Folder/MyFile1.txt"), 1024); // 1024 - размер буфера в байтах
+            out = new BufferedWriter( new FileWriter("Programming_Git/test_Folder/MyFile2.txt"));
 
             int lineCount = 0; // счетчик строк
             String s;

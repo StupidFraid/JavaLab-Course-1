@@ -8,8 +8,8 @@ public class Primer6 {
         Writer out = null; // Можно сразу записать FileWriter out = null;
 
         try {
-            in = new FileReader("./Lab_8_Dir_My/MyFile1.txt"); // файл для чтения
-            out = new FileWriter("./Lab_8_Dir_My/MyFile2.txt", true); // файл для записи, True - разрешает добавление
+            in = new FileReader("Programming_Git/test_Folder/MyFile1.txt"); // файл для чтения
+            out = new FileWriter("Programming_Git/test_Folder/MyFile2.txt", true); // файл для записи, True - разрешает добавление
             // Данные записываются и считываются побайтово как и для InputStream\OutputStream
             int oneByte; // переменная в которую считываются данные
             while ((oneByte = in.read()) != -1){

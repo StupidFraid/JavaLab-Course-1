@@ -10,7 +10,7 @@ public class Primer5 {
         String fName = sc.nextLine();
         try {
             // Создается файл
-            File f1 = new File(fName);
+            File f1 = new File("Programming_Git/test_Folder/" + fName);
             f1.createNewFile(); // Файл создан
             System.out.println("Полный путь файла:  " + f1.getAbsolutePath());
             System.out.println("Введите количество строк для записи в файл => ");

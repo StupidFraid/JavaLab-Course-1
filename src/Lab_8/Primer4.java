@@ -8,7 +8,7 @@ public class Primer4 {
     public static void main(String[] args) {
         try {
             // Создание новой папки My на диске
-            String mainFolder = "test_Folder/My";
+            String mainFolder = "Programming_Git/test_Folder/My";
             File folder1 = new File(mainFolder);
             folder1.mkdir();
             // Создание исходного файла numIsh.txt и запись в него чисел типа float

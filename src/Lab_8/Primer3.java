@@ -23,7 +23,7 @@ public class Primer3 {
     }
 
     public static void main(String[] args) throws IOException {
-        String fileName = "test_Folder/templateText.txt";
+        String fileName = "Programming_Git/test_Folder/templateText.txt";
         InputStream inFile = null; // переменная объеявляется до секции try, чтобы не ограничивать область видимости
 
         try {

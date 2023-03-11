@@ -5,8 +5,8 @@ import java.io.File;
 public class Primer1 {
     public static void main(String[] args) {
         try {
-            // создаиние файла в текущей папке ( где расположен файл Primer1.java)
-            File f1 = new File("MyFile.txt");
+            // создание файла в текущей папке Programming_Git/test_Folder/
+            File f1 = new File("Programming_Git/test_Folder/MyFile.txt");
             f1.createNewFile();
             if(f1.exists()){
                 System.out.println("создан!!!!");
@@ -14,12 +14,12 @@ public class Primer1 {
             }
 
             // Создание нескольки вложенны папок
-            File f3 = new File("test_Folder/Path1/Path2");
+            File f3 = new File("Programming_Git/test_Folder/Path1/Path2");
             f3.mkdirs();
             System.out.println("Полный путь 3: " + f3.getAbsolutePath());
 
             // Создание файла в домашней директории пользователя, и вывод полного пути
-            File f2 = new File("test_Folder/testFile1.txt");
+            File f2 = new File("Programming_Git/test_Folder/testFile1.txt");
             f2.createNewFile();
             System.out.println("Полный путь 2: " + f2.getAbsolutePath());
 
