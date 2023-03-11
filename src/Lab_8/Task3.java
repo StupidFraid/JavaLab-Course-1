@@ -21,8 +21,9 @@ public class Task3 {
             char[] consonantChar = {'Б', 'В', 'Г', 'Д', 'Ж', 'З', 'Й', 'К', 'Л', 'М', 'Н', 'П', 'Р', 'С', 'Т', 'Ф', 'Х',
                     'Ц', 'Ч', 'Ш', 'Щ'};
             while ((s = br.readLine()) != null){
+                int countWord = 0;
                 lineCount++;
-                String tempLine = "Строка " + lineCount + " все слова начинающиеся с согласных(русских): ";
+                String tempLine = "";
                 String[] lineArray = s.split("-|,| |\"|\\.");
                 for (String wordInArray : lineArray){
                     if (wordInArray.length() != 0) {
@@ -30,11 +31,14 @@ public class Task3 {
                         for (char checkConsonantChar : consonantChar)
                         {
                             if (checkConsonantChar == Character.toUpperCase(wordCharArray[0])){
+                                countWord++;
                                 tempLine += wordInArray + ", ";
                             }
                         }
                     }
                     }
+                tempLine = "В строке " + lineCount + ", найденно " + countWord + " слов(а) начинающихся с " +
+                    "согласных(русских) букв: " + tempLine;
                 tempLine = tempLine.replaceAll(", $", ";");
                 System.out.println(tempLine);
                 bw.write(tempLine);
