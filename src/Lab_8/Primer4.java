@@ -1,6 +1,7 @@
-package Lab_8.Template_0;
+package Lab_8;
 
 import java.io.*;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Primer4 {
@@ -50,3 +51,7 @@ public class Primer4 {
         }
     }
 }
+
+//Создать первый файл на диске и записать в него заданное
+//количество вещественных чисел. Далее создать второй файл и переписать в него
+//все числа из первого файла.

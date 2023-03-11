@@ -1,4 +1,4 @@
-package Lab_8.Template_0;
+package Lab_8;
 
 import java.io.*;
 import java.net.URL;
@@ -19,7 +19,7 @@ public class Primer8 {
     public static void main(String[] args) {
         try {
             // С потоком связан файл
-            InputStream inFile = new FileInputStream("./Lab_8_Dir_My/MyFile1.txt"); // Байтовый поток
+            InputStream inFile = new FileInputStream("test_Folder/MyFile1.txt"); // Байтовый поток
             Reader rFile = new InputStreamReader(inFile, "cp1251"); // передается русская кодировка
 
             readAllByByte(rFile);

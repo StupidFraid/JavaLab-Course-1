@@ -1,4 +1,4 @@
-package Lab_8.Template_0;
+package Lab_8;
 
 import java.io.*;
 import java.util.Scanner;

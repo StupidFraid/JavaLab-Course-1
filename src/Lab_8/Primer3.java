@@ -1,9 +1,8 @@
-package Lab_8.Template_0;
+package Lab_8;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Primer3 {
