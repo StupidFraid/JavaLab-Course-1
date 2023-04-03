@@ -22,8 +22,10 @@ public class Test3_NOT_WORKING {
         Node newtail = new Node(123, null);
         System.out.println("Значение последнего элемента: " + ref.value);
 
+
         //         указателю последнего элемента присваиваем новый "хвост" (элемент)
         ref.next = newtail;
+        ref = head;
         System.out.println("Выведем список после добавления нового элемента");
         while (ref != null){
             System.out.println(" " + ref.value);
