@@ -1,5 +1,7 @@
 package Lab_11.Primer_6;
 
+// Добавление нового элемента в конец списка
+
 public class Test2 {
     public static void main(String[] args) {
         // добавление элементов с перемещением головы (наращивание с головы)

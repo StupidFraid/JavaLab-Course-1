@@ -1,7 +1,6 @@
 package Lab_11.Primer_6;
 
-public class Test3_NOT_WORKING {
-
+public class Test6 {
     public static void main(String[] args) {
         Node head = null;
 
@@ -18,19 +17,22 @@ public class Test3_NOT_WORKING {
             System.out.println(" " + ref.value);
             ref = ref.next;
         }
-        // создаем новый элемент со значением 123 - будующий хвост
-        Node newtail = new Node(123, null);
-        System.out.println("Значение последнего элемента: " + ref.value);
-
-
-        //         указателю последнего элемента присваиваем новый "хвост" (элемент)
-        ref.next = newtail;
         ref = head;
-        System.out.println("Выведем список после добавления нового элемента");
-        while (ref != null){
+        int k = 1;
+
+        // поиск положения узла, предшествующего удаляемому
+        while (ref.next != null && (k < 2)){
+            ref = ref.next;
+            k++;
+        }
+        // переброска ссылки для исключения ненужного элемента из списка
+        ref.next = ref.next.next;
+
+        ref = head;
+        System.out.println("Измененный односвязаный список: ");
+        while (ref!= null){
             System.out.println(" " + ref.value);
             ref = ref.next;
         }
-
     }
 }
