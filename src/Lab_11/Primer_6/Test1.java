@@ -19,10 +19,5 @@ public class Test1 {
             System.out.println(ref.value);
             ref = ref.next;
         }
-
-
-
     }
-
-
 }

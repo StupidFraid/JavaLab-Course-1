@@ -1,6 +1,7 @@
 package Lab_11.Primer_6;
 
-// Добавление нового элемента в конец списка
+// Демонстрация создания линейного однонаправленного списка
+// с головы
 
 public class Test2 {
     public static void main(String[] args) {
