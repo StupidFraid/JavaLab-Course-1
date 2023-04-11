@@ -1,7 +1,7 @@
 package Lab_11.Primer_6;
 
 // Добавление нового элемента в список в указанное место
-public class Test4 {
+public class  Test4 {
     public static void main(String[] args) {
         Node head = null;
 
@@ -39,4 +39,5 @@ public class Test4 {
             ref = ref.next;
         }
     }
+
 }
