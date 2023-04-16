@@ -6,9 +6,9 @@ import java.util.Scanner;
 public class recursionVariant {
 
     public static void main(String[] args) {
-        createHeadRec();
-        createTailRec();
-        toStringRec();
+        toStringRec(createHeadRec());
+
+        toStringRec(createTailRec());
     }
     public static Node createHeadRec() {
         Scanner scanner = new Scanner(System.in);
